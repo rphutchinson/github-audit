@@ -1,5 +1,4 @@
 var GitHubApi = require("github");
-var googleApis = require("googleapis");
 var parseLinks = require("parse-links");
 var argsParser = require("argsparser");
 
