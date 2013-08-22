@@ -1,0 +1,11 @@
+{
+  "name": "github-audit",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "rphutchinson <rphutchinson@gmail.com",
+  "dependencies":{
+  	"github": "*",
+  	"parse-links": "*",
+  	"argsparser" : "*"
+  }
+}
