@@ -10,6 +10,7 @@ var repos = [];
 var clArgs = argsParser.parse();
 var username = clArgs['-u'];
 var password = clArgs['-p'];
+var organization = clArgs['-o'];
 
 //execute the program logic
 getData();
@@ -18,7 +19,7 @@ getData();
 function getData(page){
 	page = page || 1;
 	authenticate();
-	github.repos.getFromOrg({org: 'sparcedge', page: page}, function(err, res){
+	github.repos.getFromOrg({org: organization, page: page}, function(err, res){
 
 		var links = parseLinks(res.meta.link);
 		var next = links.next;
